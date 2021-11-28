@@ -18,13 +18,14 @@ function questions () {
         }
     ])
 
-    // KA - don't need this here, will use this down below when I call this function questions()
+    
     .then (function (answers) {
         init(answers);
         console.log(answers.title)
         console.log(answers.description)
     })
 };
+
 
 // TODO: Create a function to write README file
 function writeToFile(answers) {
