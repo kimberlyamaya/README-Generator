@@ -21,22 +21,25 @@ function questions () {
     
     .then (function (answers) {
         init(answers);
-        console.log(answers.title)
-        console.log(answers.description)
+        //console.log(answers.title)
+        //console.log(answers.description)
     })
 };
 
 
 // TODO: Create a function to write README file
 function writeToFile(answers) {
-    return `# ${answers.title}`
+    return `# ${answers.title}
+
+## ${answers.description}`
+
 }
 
 // TODO: Create a function to initialize app
 function init(answers) {
     fs.writeFile('readME.md', writeToFile(answers), err => {
         if (err) throw err;
-        console.log("you did it")
+        //console.log("you did it")
     })
 }
 
