@@ -6,8 +6,8 @@ const { join } = require('path');
 // TODO: Create an array of questions for user input
 function questions () {  
     return inquirer.prompt ([
-        {
         // title
+        {
         type: "input",
         name: "title",
         message: "What is the title of your project?"
@@ -21,18 +21,18 @@ function questions () {
         },
 
         // table of contents
-        {
+        /*{
         type: "input",
-        name: "tableOfContents",
+        name: "tableOfContentItem",
         message: "Enter a table of contents item"
         },
         {
         type: "confirm",
-        name: "tableofContentsRepeat",
+        name: "tableofContentItemRepeat",
         message: "Do you have another table of contents item to list?",
         default: false
         // repeat until no more table of content items
-        },
+        },*/
 
         // installation
         {
@@ -53,8 +53,15 @@ function questions () {
         message: "Enter usage instructions step by step"
         },
         {
+        type: "confirm",
+        name: "usageImageRepeat",
+        message: "Do you have an image to include with this instruction?",
+        default: false
+        // prompt to add image after each instruction is written, looping until no more instructions to enter
+        },
+        {
         type: "input",
-        name: "usageImage",
+        name: "usageImages",
         message: "Enter image name here including file extention. Make sure images are stored in the assets/images folder"
         // drop the instructional link here
         // add filepath to insert in images to the html wrapped around this answer
@@ -66,16 +73,6 @@ function questions () {
         default: false
         // prompt to add image after each instruction is written, looping until no more instructions to enter
         },
-        {
-        type: "confirm",
-        name: "usageImageRepeat",
-        message: "Do you have an image to include with this instruction?",
-        default: false
-        // prompt to add image after each instruction is written, looping until no more instructions to enter
-        },
-
-        // license
-        // Enter license.txt here, in the answer function
 
         // contributing
         // Enter contribution here, in the answer function
@@ -121,14 +118,10 @@ function questions () {
         message: "Do you have more FAQ questions to enter?",
         default: false
          // prompt for FAQAnswer after each FAQQuestion, looping until no more FAQQuestions to ask
-        },
-
-        // editors
-        {
-        type: "input",
-        name: "editors",
-        message: "List editor names"
         }
+
+        // license
+        // Enter license.txt here, in the answer function
     ])
 
     
@@ -142,22 +135,50 @@ function questions () {
 
 // TODO: Create a function to write README file
 function writeToFile(answers) {
-    return `# ${answers.title}
+  // title
+  return `# ${answers.title}
+ 
+  ## Description
+  ${answers.description}
 
-## ${answers.description}`
+  ## Table of Contents
+  [Installation](##Installation)  
+  [Usage](##Usage)  
+  [Contributing](##Contributing)   
+  [Tests](##Tests)  
+  [Questions](##Questions)  
+  [License](##License) 
+  
+  ## Installation
+  ${answers.installationInstructions}  
+  
+  ## Usage
+  ${answers.usageInstructions}  
+  ${answers.usageImages}  
+  
+  ## Contributing
+  
+  ### Add to Project
+  To work on or add to this project follow these steps
+  1. Fork the repository
+  2. Add you changes
+  3. Submit a pull request for approval
+  
+  ### Issues
+  [Link to GitHub Issues](https://github.com/${answers.contributingGitHubIssuesUsername}/${answers.contributingGitHubIssuesRepoName}/issues)   
 
-// right after usageImageRepeat put License, pull License from Lincense.txt
-// then put the contributing text
-// contributing text
-// Find issues to correct in the issues tab on github, click here to view
-// example of the link https://github.com/kimberlyamaya/README-Generator/issues
-// to work/add to this project
-// 1. fork the repository
-// 2. make the fix
-// 3. submit a pull request
+  ## Tests
+  ${answers.testInstruction}
 
+  ## Questions
 
-// add editors
+  ### FAQ
+  ${answers.FAQQuestion}  
+  ${answers.FAQAnswer}
+
+  ## License
+  [Click here to view License](license.txt)`
+
 }
 
 // TODO: Create a function to initialize app
