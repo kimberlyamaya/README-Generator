@@ -136,7 +136,7 @@ function questions () {
         type: "input",
         name: "FAQAnswer",
         message: "Enter your answer"
-        }
+        },
         /*{
         type: "confirm",
         name: "FAQRepeat",
@@ -147,6 +147,12 @@ function questions () {
 
         // license
         // Enter license.txt here, in the answer function
+        {
+        type: "list",
+        name: "license",
+        message: "Choose a license",
+        choices: ["MIT"]  
+        }        
     ])
 
     .then (function (answers) {
@@ -212,7 +218,9 @@ function writeToFile(answers) {
   A: ${answers.FAQAnswer}
 
   ## License
-  [Click here to view License](license.txt)`
+  This project contains a license from ${answers.license}  
+  [Click here to see the license](license.txt)
+  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)`
 
 }
 

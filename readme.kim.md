@@ -42,7 +42,7 @@
   [Click here to view current GitHub Issues](https://github.com/kimberlyamaya/readme-generator/issues)   
 
   ## Tests
-  1. There are 4 required fields
+  1. There are multiple required fields
   2. To test if these work on any question that states (Required)
   3. Press Enter in terminal without entering any data
   4. PASS: You will be prompted to enter your information again
@@ -61,4 +61,5 @@
   A: Yes
 
   ## License
-  [Click here to view License](license.txt)
+  This project contains a license from MIT
+  Click here to see the license MIT license
