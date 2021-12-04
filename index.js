@@ -124,6 +124,11 @@ function questions () {
         // questions
         {
         type: "input",
+        name: "Email",
+        message: "Enter your email address for questions"
+        },
+        {
+        type: "input",
         name: "FAQQuestion",
         message: "Enter a question for your FAQ section"
         },
@@ -195,6 +200,12 @@ function writeToFile(answers) {
   ${answers.testInstruction}
 
   ## Questions
+
+  ### Contact
+  For any questions please contact ${answers.contributingGitHubIssuesUsername}  
+
+  Email: [${answers.Email}](mailto:${answers.Email})  
+  GitHub: [https://github.com/${answers.contributingGitHubIssuesUsername}](https://github.com/${answers.contributingGitHubIssuesUsername})  
 
   ### FAQ
   Q: ${answers.FAQQuestion}  

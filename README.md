@@ -1,7 +1,7 @@
-# readme generator
+# jb
  
   ## Description
-  yes
+  jb
 
   ## Table of Contents
   [Installation](##Installation)  
@@ -12,10 +12,10 @@
   [License](##License) 
   
   ## Installation
-    
+  jb  
   
   ## Usage
-     
+  jb   
 
   ## Contributing
   
@@ -32,16 +32,22 @@
   3. Give the issue a title and comments
   4. Click 'Submit new issue' button
 
-  [Click here to view current GitHub Issues](https://github.com/kimberlyamaya/readme-generator/issues)   
+  [Click here to view current GitHub Issues](https://github.com/jb/jb/issues)   
 
   ## Tests
-  
+  jb
 
   ## Questions
 
+  ### Contact
+  For any questions please contact jb  
+
+  Email: [jb](mailto:jb)  
+  GitHub: [https://github.com/jb](https://github.com/jb)  
+
   ### FAQ
-  Q:   
-  A: 
+  Q: jb  
+  A: jb
 
   ## License
   [Click here to view License](license.txt)
