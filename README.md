@@ -1,7 +1,7 @@
-# important project name
+# project
  
   ## Description
-  important project description
+  description
 
   ## Table of Contents
   [Installation](##Installation)  
@@ -12,31 +12,30 @@
   [License](##License) 
   
   ## Installation
-  1. installation instruction  
-  
-  ## Usage
-  1. usuage instruction  
     
   
+  ## Usage
+     
+
   ## Contributing
   
-  ### Add to Project
-  To work on or add to this project follow these steps
-  1. Fork the repository
-  2. Add you changes
-  3. Submit a pull request for approval
+  ### Add to Project  
+  To work on or add to this project follow these steps  
+  1. Fork the repository  
+  2. Add you changes  
+  3. Submit a pull request for approval  
   
   ### Issues
-  [Link to GitHub Issues](https://github.com/kimberlyamaya/readme-generator/issues)   
+  [Link to GitHub Issues](https://github.com/github/repo/issues)   
 
   ## Tests
-  1. test instructions
+  
 
   ## Questions
 
   ### FAQ
-  questions for faq  
-  answer for faq
+  Q:   
+  A: 
 
   ## License
   [Click here to view License](license.txt)
