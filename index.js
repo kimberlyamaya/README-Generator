@@ -183,7 +183,13 @@ function writeToFile(answers) {
   3. Submit a pull request for approval  
   
   ### Issues
-  [Link to GitHub Issues](https://github.com/${answers.contributingGitHubIssuesUsername}/${answers.contributingGitHubIssuesRepoName}/issues)   
+  To add issues in GitHub follow these steps
+  1. Click on the issues tab
+  2. Click 'New issue' button
+  3. Give the issue a title and comments
+  4. Click 'Submit new issue' button
+
+  [Click here to view current GitHub Issues](https://github.com/${answers.contributingGitHubIssuesUsername}/${answers.contributingGitHubIssuesRepoName}/issues)   
 
   ## Tests
   ${answers.testInstruction}
