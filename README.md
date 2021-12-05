@@ -4,12 +4,12 @@
   This is a README file generator. This uses command line prompts to collect data from the user to insert into the README file. Create a quality README file in just a few short steps. 
 
   ## Table of Contents
-  [Installation](##Installation)  
-  [Usage](##Usage)  
-  [Contributing](##Contributing)   
-  [Tests](##Tests)  
-  [Questions](##Questions)  
-  [License](##License) 
+  [Installation](#Installation)  
+  [Usage](#Usage)  
+  [Contributing](#Contributing)   
+  [Tests](#Tests)  
+  [Questions](#Questions)  
+  [License](#License) 
   
   ## Installation
   1. See Contributing for forking the repo
@@ -59,9 +59,10 @@
   GitHub: [Link to GitHub Account](https://github.com/kimberlyamaya)  
 
   ### FAQ
-  Q: Is the Inquirer package used?
-  A: Yes
+  Q: Is the Inquirer package used?  
+  A: Yes  
 
   ## License
-  This project contains a license from MIT
-  Click here to see the license MIT license
+  This project contains a license from ${answers.license}  
+  [Click here to see the license](license.txt)
+  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
