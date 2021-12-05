@@ -1,7 +1,7 @@
 # README Generator
  
   ## Description
-  This is a README file generator. This uses command line prompts to collect data from the user to insert into the README file. Create a quality README file in just a few short steps
+  This uses command line prompts to collect data from the user to insert into the README file.
 
   ## Table of Contents
   [Installation](##Installation)  
@@ -12,10 +12,10 @@
   [License](##License) 
   
   ## Installation
-  1. See Contribution for forking the repo <br /> 2. Once these files are local on your machine <br /> 3. Run 'npm install' in the terminal to install npm to create the necessary dependencies  
+  1. See Contributing section for forking the repo <br /> 2. Once these files are local on your machine  
   
   ## Usage
-  1. Run 'node index.js' in the terminal to intiate the README file generator <br /> 2. Follow the prompts   
+  1. Run 'node index.js' in the terminal to initiate the README file generator <br /> 2. Follow the prompts in the terminal   
 
   ## Contributing
   
@@ -35,7 +35,7 @@
   [Click here to view current GitHub Issues](https://github.com/kimberlyamaya/readme-generator/issues)   
 
   ## Tests
-  1. There are multiple required fields <br /> 2. To test if these work <br /> 3. Press Etner in terminal
+  1. There are multiple required fields <br /> 2. To test if these work on any question that states (Required)
 
   ## Questions
 
@@ -46,7 +46,7 @@
   GitHub: [https://github.com/kimberlyamaya](https://github.com/kimberlyamaya)  
 
   ### FAQ
-  Q: Is the Inquirer Package required  
+  Q: Is the inquirer package used?  
   A: Yes
 
   ## License

@@ -24,6 +24,8 @@
   4. Continue all prompts until no more questions
   5. Find the newly generated README file to view what has been generated
 
+  [Click here to see walk-thru video](https://watch.screencastify.com/v/ICO05kGA0PiLaTB6oz49)
+
   ## Contributing  
   
   ### Add to Project  

@@ -166,10 +166,10 @@ function questions () {
 // TODO: Create a function to write README file
 function writeToFile(answers) {
   // title
-  return `# ${answers.title}
+  return `# ${answers.title}  
  
   ## Description
-  ${answers.description}
+  ${answers.description}  
 
   ## Table of Contents
   [Installation](##Installation)  
@@ -203,7 +203,7 @@ function writeToFile(answers) {
   [Click here to view current GitHub Issues](https://github.com/${answers.contributingGitHubIssuesUsername}/${answers.contributingGitHubIssuesRepoName}/issues)   
 
   ## Tests
-  ${answers.testInstruction}
+  ${answers.testInstruction}  
 
   ## Questions
 
@@ -215,7 +215,7 @@ function writeToFile(answers) {
 
   ### FAQ
   Q: ${answers.FAQQuestion}  
-  A: ${answers.FAQAnswer}
+  A: ${answers.FAQAnswer}  
 
   ## License
   This project contains a license from ${answers.license}  
