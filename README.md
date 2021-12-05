@@ -63,6 +63,6 @@
   A: Yes  
 
   ## License
-  This project contains a license from ${answers.license}  
+  This project contains a license from MIT 
   [Click here to see the license](license.txt)
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
